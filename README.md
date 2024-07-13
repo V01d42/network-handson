@@ -21,7 +21,7 @@ apt list | grep docker-ce
 #### Clone repository
 ```
 git clone [this repository URL]
-cd network-handson
+cd network_handson
 ```
 
 #### build-essential
