@@ -40,7 +40,7 @@ sudo apt -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin d
 #### Containerlab
 
 ```
-bash -c "$(curl -sL https://get.containerlab.dev)"
+sudo bash -c "$(curl -sL https://get.containerlab.dev)"
 ```
 
 #### Vrnetlab
@@ -82,7 +82,7 @@ Juniper公式の[vjunosrouterのVM配布サイト](https://support.juniper.net/s
 
 ```
 cd vjunosrouter
-curl -L -o vJunos-router-23.2R1.15.qcow2 <コピーしたURL>
+curl -L -o vJunos-router-23.2R1.15.qcow2 "<コピーしたURL>"
 make
 ```
 
