@@ -1,0 +1,24 @@
+name: demo1
+
+topology:
+  kinds:
+    linux:
+      image: ghcr.io/hellt/network-multitool
+  nodes:
+    client1:
+      kind: linux
+    vjunosrouter1:
+      kind: juniper_vjunosrouter
+      image: vrnetlab/vr-vjunosrouter:23.2R1.15
+    vjunosrouter2:
+      kind: juniper_vjunosrouter
+      image: vrnetlab/vr-vjunosrouter:23.2R1.15
+    vjunosrouter3:
+      kind: juniper_vjunosrouter
+      image: vrnetlab/vr-vjunosrouter:23.2R1.15
+
+  links:
+    - endpoints: ["client1:eth1", "vjunosrouter1:eth1"]
+    - endpoints: ["vjunosrouter1:eth2", "vjunosrouter2:eth1"]
+    - endpoints: ["vjunosrouter1:eth3", "vjunosrouter3:eth1"]
+    - endpoints: ["vjunosrouter2:eth2", "vjunosrouter3:eth2"]
