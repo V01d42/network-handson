@@ -81,7 +81,7 @@ git clone https://github.com/hellt/vrnetlab && cd vrnetlab
 Juniper公式の[vjunosrouterのVM配布サイト](https://support.juniper.net/support/downloads/?p=vjunos-router)にアクセスし、`Application Package`の`Downloads`にある`qcow2`をクリックしてlicenseに同意、表示されたURLをコピーして、以下のコマンドを実行
 
 ```
-cd vrnetlab/vjunosrouter
+cd vjunosrouter
 curl -L -o vJunos-router-23.2R1.15.qcow2 <コピーしたURL>
 make
 ```
