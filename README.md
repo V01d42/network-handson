@@ -78,7 +78,7 @@ git clone https://github.com/hellt/vrnetlab && cd vrnetlab
 
 ### make juniper_vjunosrouter container(Vrnetlab)
 
-Juniper公式の[vjunosrouterのVM配布サイト](https://support.juniper.net/support/downloads/?p=vjunos-router)にアクセスし、`Application Package`の`	Downloads`にある`qcow2`をクリックしてlicenseに同意、表示されたURLをコピーして、以下のコマンドを実行
+Juniper公式の[vjunosrouterのVM配布サイト](https://support.juniper.net/support/downloads/?p=vjunos-router)にアクセスし、`Application Package`の`Downloads`にある`qcow2`をクリックしてlicenseに同意、表示されたURLをコピーして、以下のコマンドを実行
 
 ```
 cd vrnetlab/vjunosrouter
